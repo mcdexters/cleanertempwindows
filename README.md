@@ -3,7 +3,7 @@
 ## Despre
 Un utilitar pentru curățarea folderelor temporare din Windows, dezvoltat de Zus Software v0.1 (2025).
 
-![Zus Software](https://via.placeholder.com/150?text=Zus+Software)
+![Zus Software](images/zus_logo.png)
 
 ## Caracteristici
 - ✅ Interfață prietenoasă cu animație de încărcare
@@ -13,7 +13,14 @@ Un utilitar pentru curățarea folderelor temporare din Windows, dezvoltat de Zu
 - ✅ Nu necesită instalare
 
 ## Capturi de ecran
-![Screenshot](https://via.placeholder.com/800x400?text=Screenshot+Aplicatie)
+### Ecranul inițial
+![Ecran inițial](images/app_start.png)
+
+### Procesul de încărcare
+![Procesul de încărcare](images/app_loading.png)
+
+### Rezultate
+![Rezultate](images/app_results.png)
 
 ## Cum să utilizați
 1. Descărcați sau clonați repository-ul
@@ -45,7 +52,7 @@ Utilitarul include două scripturi principale:
 Contribuțiile sunt binevenite! Vă rugăm să deschideți un issue sau să trimiteți un pull request.
 
 ## Licență
-© 2025 Zus Software. Toate drepturile rezervate.
+ 2025 Zus Software. Toate drepturile rezervate.
 
 ## Contact
 www.zussoftware.ro
