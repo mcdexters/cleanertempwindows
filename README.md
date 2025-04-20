@@ -1,7 +1,7 @@
 # Cleaner Temp Windows
 
 ## Despre
-Un utilitar pentru curățarea folderelor temporare din Windows, dezvoltat de Zus Software v0.1 (2025).
+Un utilitar pentru curățarea folderelor temporare din Windows, dezvoltat de Zus Software v.1.0 (2025).
 
 ![Zus Software](images/zus_logo.png)
 
