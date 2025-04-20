@@ -9,12 +9,12 @@ Set objShell = CreateObject("WScript.Shell")
 
 ' Creează o consolă mai stabilă cu titlul și culorile dorite
 strCommand = "cmd /c title Zus Software v.0.1 2025 - Curățare Foldere Temporare & color 1F & cls & " & _
-             "echo. & echo Program facut de Zus Software v.0.1 2025 & echo. & " & _
+             "C:\Scripts\logo_ascii.bat & " & _
              "echo Apasati o tasta pentru a incepe... & pause > nul"
 objShell.Run strCommand, 1, True
 
 ' Afișează procesul de încărcare fără a cauza flash-uri
-strCommand = "cmd /c mode con: cols=60 lines=10 & color 1F & cls"
+strCommand = "cmd /c mode con: cols=90 lines=25 & color 1F & cls"
 objShell.Run strCommand, 1, True
 
 ' Afișează animația de încărcare într-o singură fereastră de comandă
@@ -31,18 +31,14 @@ tempFile.WriteLine("@echo off")
 tempFile.WriteLine("title Zus Software v.0.1 2025 - Curățare Foldere Temporare")
 tempFile.WriteLine("color 1F")
 tempFile.WriteLine("cls")
-tempFile.WriteLine("echo.")
-tempFile.WriteLine("echo Program facut de Zus Software v.0.1 2025")
-tempFile.WriteLine("echo.")
+tempFile.WriteLine("call C:\Scripts\logo_ascii.bat")
 
 For i = 0 To 100 Step 5
     loadingText = "echo Incarcare: " & i & "%%"
     tempFile.WriteLine(loadingText)
     tempFile.WriteLine("ping -n 2 127.0.0.1 > nul")
     tempFile.WriteLine("cls")
-    tempFile.WriteLine("echo.")
-    tempFile.WriteLine("echo Program facut de Zus Software v.0.1 2025")
-    tempFile.WriteLine("echo.")
+    tempFile.WriteLine("call C:\Scripts\logo_ascii.bat")
 Next
 
 tempFile.WriteLine("echo Incarcare: 100%%")
@@ -74,9 +70,20 @@ Dim ShellApp
 Set ShellApp = CreateObject("Shell.Application")
 ShellApp.ShellExecute "powershell.exe", "-ExecutionPolicy Bypass -NoProfile -Command ""Start-Process powershell.exe -ArgumentList '-ExecutionPolicy Bypass -NoProfile -File """ & PowerShellScriptPath & """' -Verb RunAs""", "", "runas", 1
 
+' După execuția PowerShell, adăugăm opțiunea de upload pe GitHub
+strCommand = "cmd /c cls & call C:\Scripts\logo_ascii.bat & echo. & echo Doriti sa uploadati scriptul pe GitHub? (D/N) & choice /C DN /N"
+objShell.Run strCommand, 1, True
+
+If Err.Number = 0 Then
+    ' Dacă utilizatorul alege "D", executăm scriptul de upload
+    If CreateObject("Scripting.FileSystemObject").GetFile("C:\Windows\System32\choice.exe").ParentFolder.GetFile("errorlevel").OpenAsTextStream(1, -2).ReadAll = "1" Then
+        objShell.Run "powershell.exe -ExecutionPolicy Bypass -NoProfile -File C:\Scripts\GitUpload.ps1", 1, True
+    End If
+End If
+
 ' Afișează mesajul de încheiere
 WScript.Sleep 2000
-strCommand = "cmd /c cls & echo. & echo Multumim pentru utilizarea programului nostru! & echo www.zussoftware.ro & echo. & pause"
+strCommand = "cmd /c cls & call C:\Scripts\logo_ascii.bat & echo. & echo Multumim pentru utilizarea programului nostru! & echo www.zussoftware.ro & echo. & pause"
 objShell.Run strCommand, 1, True
 
 ' Eliberează resursele
