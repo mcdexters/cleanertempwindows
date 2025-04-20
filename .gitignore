@@ -1,27 +1,48 @@
-# Fișiere temporare Windows
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Windows temporary files
 *.tmp
 ~$*
-Thumbs.db
-desktop.ini
+*.swp
 
-# Fișiere temporare create de script
+# Script generated temporary files
 *.bat.temp
 loading_animation.bat
+*.ps1.tmp
+*.psm1.tmp
+*.psd1.tmp
 
-# Fișiere de configurare specifice utilizatorului
-.DS_Store
-
-# Fișiere log
+# Logs and databases
 *.log
+*.sqlite
+*.db
 
-# Fișiere de backup
+# Backup files
 *.bak
 *.backup
 *~
+[Bb]ackup/
 
-# Fișiere temporare PowerShell
-*.ps1.tmp
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
 
-# Alte fișiere care nu ar trebui în repository
+# IDE and editor files
 .vscode/
 .idea/
+*.suo
+*.user
+*.sln.docstates
+
+# Script specific excludes
+GitUpload.ps1
+*_credentials.ps1
+*_secret*.ps1
