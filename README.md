@@ -1,18 +1,27 @@
-# Zus Software - Utilitar de Curățare Foldere Temporare v0.1 (2025)
+# Cleaner Temp Windows
 
-## Descriere
-Acest utilitar este conceput pentru a curăța folderele temporare din sistemul Windows, eliberând spațiu pe disc și îmbunătățind performanța sistemului. 
+## Despre
+Un utilitar pentru curățarea folderelor temporare din Windows, dezvoltat de Zus Software v0.1 (2025).
 
-Programul oferă o interfață prietenoasă cu utilizatorul, cu indicatoare de progres și feedback vizual.
+![Zus Software](https://via.placeholder.com/150?text=Zus+Software)
 
-## Repository GitHub
-Repository-ul codului sursă este disponibil la:
-https://github.com/mcdexters/cleanertempwindows.git
+## Caracteristici
+- ✅ Interfață prietenoasă cu animație de încărcare
+- ✅ Curățare foldere temporare Windows pentru toți utilizatorii
+- ✅ Versiuni în VBScript și PowerShell
+- ✅ Feedback vizual pentru utilizator
+- ✅ Nu necesită instalare
 
-### Clonare repository
-```bash
-git clone https://github.com/mcdexters/cleanertempwindows.git
-```
+## Capturi de ecran
+![Screenshot](https://via.placeholder.com/800x400?text=Screenshot+Aplicatie)
+
+## Cum să utilizați
+1. Descărcați sau clonați repository-ul
+   ```bash
+   git clone https://github.com/mcdexters/cleanertempwindows.git
+   ```
+2. Faceți dublu clic pe `CleanTempFolders.vbs` pentru versiunea cu interfață
+3. SAU rulați `CleanTempFolders.ps1` direct cu PowerShell (ca Administrator)
 
 ## Componente
 Utilitarul include două scripturi principale:
@@ -32,28 +41,11 @@ Utilitarul include două scripturi principale:
 - PowerShell 5.1 sau mai recent
 - Drepturi de administrator pentru curățarea folderelor sistem
 
-## Cum se utilizează
+## Contribuții
+Contribuțiile sunt binevenite! Vă rugăm să deschideți un issue sau să trimiteți un pull request.
 
-### Metoda 1 - Utilizare script VBS (Recomandat)
-1. Faceți dublu clic pe fișierul `CleanTempFolders.vbs`
-2. Apăsați o tastă pentru a începe procesul
-3. Așteptați finalizarea animației de încărcare
-4. Confirmați solicitarea UAC pentru a acorda drepturi de administrator
-5. Așteptați finalizarea procesului de curățare
-
-### Metoda 2 - Utilizare direct script PowerShell
-1. Faceți clic dreapta pe fișierul `CleanTempFolders.ps1`
-2. Selectați "Rulare cu PowerShell" (cu drepturi de Administrator)
-3. Apăsați o tastă pentru a începe
-4. Așteptați finalizarea procesului de curățare
-
-## Note importante
-- Scriptul necesită drepturi de administrator pentru a curăța anumite foldere temporare
-- Fișierele utilizate în mod activ de sistem nu vor fi șterse
-- Este recomandat să închideți toate aplicațiile înainte de a rula acest utilitar
-
-## Despre
-Program dezvoltat de Zus Software v.0.1 (2025)
-www.zussoftware.ro
-
+## Licență
 © 2025 Zus Software. Toate drepturile rezervate.
+
+## Contact
+www.zussoftware.ro
