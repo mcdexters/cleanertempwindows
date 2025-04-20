@@ -1,0 +1,27 @@
+# Fișiere temporare Windows
+*.tmp
+~$*
+Thumbs.db
+desktop.ini
+
+# Fișiere temporare create de script
+*.bat.temp
+loading_animation.bat
+
+# Fișiere de configurare specifice utilizatorului
+.DS_Store
+
+# Fișiere log
+*.log
+
+# Fișiere de backup
+*.bak
+*.backup
+*~
+
+# Fișiere temporare PowerShell
+*.ps1.tmp
+
+# Alte fișiere care nu ar trebui în repository
+.vscode/
+.idea/
